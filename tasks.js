@@ -38,6 +38,10 @@ function onDataReceived(text) {
     quit();
   }
 
+  else if (text.trim() === 'help'){
+    help(); 
+  }
+
   else if (text === 'hello\n') {
   hello();
 }
@@ -76,6 +80,12 @@ function hello() {
  */
 function quit() {
   console.log('Quitting now, goodbye!')
+  process.exit();
+}
+
+
+function help() {
+  console.log('All the possible commands: \n' ,'\n','hello\n', 'quit\n', 'help\n', 'list\n', 'add\n', 'remove\n', 'update\n', 'check\n', 'uncheck\n')
   process.exit();
 }
 
