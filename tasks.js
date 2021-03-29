@@ -83,6 +83,7 @@ function quit() {
   process.exit();
 }
 
+// The following help command lists all the possible commands
 
 function help() {
   console.log('All the possible commands: \n' ,'\n','hello\n', 'quit\n', 'help\n', 'list\n', 'add\n', 'remove\n', 'update\n', 'check\n', 'uncheck\n')
