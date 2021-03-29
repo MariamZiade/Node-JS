@@ -64,10 +64,12 @@ function unknownCommand(c) {
  * @returns {void}
  */
 function hello(text) {
-
-    console.log("hello" +" "+ text + "!")
+  if (!text) {
+    console.log("hello!");
+  } else {
+    console.log("hello" + " " + text + "!");
   }
-
+}
 
 /**
  * Exits the application
