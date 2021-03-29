@@ -87,7 +87,6 @@ function help() {
   console.log(
     "All the possible commands: \n",
     "\n",
-    "hello\n",
     "quit\n",
     "help\n",
     "list\n",
